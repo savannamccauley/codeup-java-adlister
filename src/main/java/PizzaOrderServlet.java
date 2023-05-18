@@ -6,8 +6,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet (name="Pizza-Order", urlPatterns = "/pizza")
+@WebServlet (name="Pizza-Order", urlPatterns = "/pizza-order")
 public class PizzaOrderServlet extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doGet(req, resp);
+        req.getRequestDispatcher("/pizza-order.jsp").forward(req,resp);
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String crust = request.getParameter("crust");
         String size = request.getParameter("size");
