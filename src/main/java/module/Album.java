@@ -2,9 +2,9 @@ package module;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import java.io.Serializable;
 import java.util.HashMap;
-@WebServlet (name = "Album", urlPatterns = "/album")
-public class Album extends HttpServlet {
+public class Album implements Serializable {
         private String name ;
         private String popSong;
 

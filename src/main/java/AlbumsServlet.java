@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet (name="AlbumsServlet", urlPatterns = "albums")
+@WebServlet (name="AlbumsServlet", urlPatterns = "/albums")
 public class AlbumsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,7 +25,7 @@ public class AlbumsServlet extends HttpServlet {
 
         req.setAttribute("albums", album);
 
-        req.getRequestDispatcher("/")
+        req.getRequestDispatcher("/bean-test.jsp").forward(req,resp);
 
     }
 }
