@@ -15,8 +15,8 @@
 <body>
 <c:forEach items="${allAds}" var="ads">
     <div>
-    <h1>Add Listing # ${ads.id}</h1>
-    <h1>User ID # ${ads.userId}</h1>
+    <h1>${ads.id}</h1>
+    <h1>User ID:  ${ads.userId}</h1>
     <h2>${ads.title}</h2>
     <p>${ads.description}</p>
     </div>
