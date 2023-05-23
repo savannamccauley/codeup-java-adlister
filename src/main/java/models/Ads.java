@@ -1,3 +1,7 @@
+package models;
+
+import dao.Ad;
+
 import java.util.List;
 
 public interface Ads {
