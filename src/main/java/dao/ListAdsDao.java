@@ -1,5 +1,8 @@
 package dao;
 
+import controllers.Ad;
+import models.Ads;
+
 import java.util.ArrayList;
 import java.util.List;
 

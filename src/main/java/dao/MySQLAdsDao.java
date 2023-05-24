@@ -1,7 +1,8 @@
 package dao;
 
 import com.mysql.cj.jdbc.Driver;
-import com.mysql.cj.jdbc.exceptions.MySQLTimeoutException;
+import controllers.Ad;
+import controllers.Config;
 import models.Ads;
 
 import java.sql.*;

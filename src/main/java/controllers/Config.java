@@ -1,4 +1,4 @@
-package dao;
+package controllers;
 
 public class Config {
     public String getUrl() {

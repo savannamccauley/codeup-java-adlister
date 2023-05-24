@@ -1,7 +1,7 @@
 
 package dao;
 
-import dao.MySQLAdsDao;
+import controllers.Config;
 import models.Ads;
 
 public class DaoFactory {

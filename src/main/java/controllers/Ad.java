@@ -1,4 +1,4 @@
-package dao;
+package controllers;
 
 public class Ad {
     private long id;
