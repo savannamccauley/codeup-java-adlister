@@ -1,4 +1,8 @@
+
 package dao;
+
+import dao.MySQLAdsDao;
+import models.Ads;
 
 public class DaoFactory {
     private static Ads adsDao;
